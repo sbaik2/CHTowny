@@ -35,7 +35,7 @@ public class Functions {
     }
 
     @api
-    public static class getResidents extends AbstractFunction {
+    public static class towny_get_residents extends AbstractFunction {
         public Class<? extends CREThrowable>[] thrown() {
             return new Class[]{CRENotFoundException.class, CREIllegalArgumentException.class};
         }
@@ -92,7 +92,7 @@ public class Functions {
     }
 
     @api
-    public static class getPlayerTownName extends AbstractFunction {
+    public static class towny_get_player_town_name extends AbstractFunction {
         public Class<? extends CREThrowable>[] thrown() {
             return new Class[]{CRENotFoundException.class, CREIllegalArgumentException.class, NotRegisteredException.class};
         }
@@ -142,7 +142,7 @@ public class Functions {
 
 
     @api
-    public static class getTownAtLocation extends AbstractFunction {
+    public static class towny_get_town_at_loc extends AbstractFunction {
         public Class<? extends CREThrowable>[] thrown() {
             return new Class[]{CRENotFoundException.class, CREIllegalArgumentException.class, CREInvalidWorldException.class};
         }
